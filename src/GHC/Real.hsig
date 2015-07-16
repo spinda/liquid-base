@@ -1,0 +1,15 @@
+{-# OPTIONS_GHC -sig-of base:GHC.Real #-}
+
+{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE PackageImports #-}
+{-# LANGUAGE QuasiQuotes #-}
+
+module GHC.Real (module GHC.Real) where
+
+import "base" GHC.Real
+import LiquidHaskell
+
+import GHC.Num
+
+fromIntegral :: (Integral a, Num b) => [lq| x:a -> { v:b | v = x } |]
+

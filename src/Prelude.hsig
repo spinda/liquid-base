@@ -1,0 +1,18 @@
+{-# OPTIONS_GHC -sig-of base:Prelude #-}
+
+{-# LANGUAGE GADTs #-}
+{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE PackageImports #-}
+{-# LANGUAGE QuasiQuotes #-}
+
+module Prelude (module Prelude) where
+
+import "base" Prelude
+import LiquidHaskell
+
+import GHC.Base
+import GHC.Num
+import GHC.Prim
+import GHC.Real
+import GHC.Types
+

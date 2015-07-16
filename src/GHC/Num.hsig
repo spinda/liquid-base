@@ -1,0 +1,16 @@
+{-# OPTIONS_GHC -sig-of base:GHC.Num #-}
+
+{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE PackageImports #-}
+{-# LANGUAGE QuasiQuotes #-}
+
+module GHC.Num (module GHC.Num) where
+
+import "base" GHC.Num
+import LiquidHaskell
+
+import GHC.Base
+
+(+) :: Num a => [lq| x:a -> y:a -> { v:a | v = x + y } |]
+(-) :: Num a => [lq| x:a -> y:a -> { v:a | v = x - y } |]
+
