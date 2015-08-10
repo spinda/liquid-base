@@ -4,12 +4,13 @@
 {-# LANGUAGE PackageImports #-}
 {-# LANGUAGE QuasiQuotes #-}
 
-module GHC.Real (module GHC.Real) where
+module Liquid.GHC.Real (module GHC.Real) where
 
-import "base" GHC.Real
 import LiquidHaskell
 
-import GHC.Num
+import GHC.Real
+
+import Liquid.GHC.Num
 
 fromIntegral :: (Integral a, Num b) => [lq| x:a -> { v:b | v = x } |]
 
